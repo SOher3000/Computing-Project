@@ -1,0 +1,7 @@
+$queryA1 = mysqli_query($db,'SELECT `09:00` FROM `days` WHERE `Date` = "$CalDate"') or die(mysqli_error($db));
+
+if ($queryA1='NULL') { 
+  echo '<td id="A1"><p>Free</p></td>';
+} else {
+  echo '<td id="A1" style="background-color:#405C5C; color:#000000;"><p>Booked</p></td>';
+};
